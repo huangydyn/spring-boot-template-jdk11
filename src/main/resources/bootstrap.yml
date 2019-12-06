@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring_boot_template
+  cloud:
+    discovery:
+      enabled: false
+    circuit:
+      breaker:
+        enabled: false

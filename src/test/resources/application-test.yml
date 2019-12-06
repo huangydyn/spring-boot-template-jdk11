@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    serialization:
+      write_dates_as_timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  cache:
+    type: simple
+
+logging:
+  level:
+    org:
+      hibernate:
+        hql: info
