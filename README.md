@@ -13,7 +13,7 @@ This is a template project for Spring Boot based on jdk11, with basic components
 - Lombok
 
 Build
-- Gradle
+- Gradle tools
 
 Code Check
 - PMD
