@@ -1,8 +1,8 @@
 buildscript {
     ext {
-        springBootVersion = "2.1.2.RELEASE"
+        springBootVersion = "2.1.13.RELEASE"
         junitVersion = "5.3.0"
-        springCloudVersion = "Greenwich.SR1"
+        springCloudVersion = "Greenwich.SR5"
     }
     repositories {
         mavenLocal()
