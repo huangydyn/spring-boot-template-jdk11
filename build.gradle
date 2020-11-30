@@ -6,12 +6,10 @@ buildscript {
     }
     repositories {
         mavenLocal()
-        mavenCentral()
-        maven { url "http://repo.spring.io/snapshot" }
-        maven { url "http://repo.spring.io/milestone" }
-        maven { url "http://repo.spring.io/release" }
-        maven { url "http://central.maven.org/maven2" }
-        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -42,12 +40,10 @@ sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenLocal()
-    mavenCentral()
-    maven { url "http://repo.spring.io/snapshot" }
-    maven { url "http://repo.spring.io/milestone" }
-    maven { url "http://repo.spring.io/release" }
-    maven { url "http://central.maven.org/maven2" }
-    maven { url "https://plugins.gradle.org/m2/" }
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
     maven { url 'https://jitpack.io' }
 }
 
