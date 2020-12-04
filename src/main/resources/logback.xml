@@ -5,7 +5,7 @@
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>
-                %d{dd-MM-yyyy HH:mm:ss.SSS} %highlight(%-5level) %green(%X{X-REQUEST-URI:-}) %logger %M %message %exception{full} [${appName:-},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-}]%n
+                %d{dd-MM-yyyy HH:mm:ss.SSS} %highlight(%-5level)  %message %n
             </pattern>
             <charset>utf8</charset>
         </encoder>

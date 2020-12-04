@@ -3,7 +3,7 @@ This is a template project for Spring Boot based on jdk11, with basic components
 
 - Spring Boot:2.1.13.RELEASE
 - Flyway
-- PostGreSql
+- MySQL
 - Swagger
 - Redis
 - JPA
@@ -31,3 +31,8 @@ Test
 
 Deploy
 - DockerFile
+
+## How to run mysql locally
+```
+docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
+```

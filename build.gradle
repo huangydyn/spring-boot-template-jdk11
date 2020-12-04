@@ -143,6 +143,7 @@ dependencyManagement {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile 'com.alibaba:druid-spring-boot-starter:1.1.9'
     compile("org.springframework.boot:spring-boot-starter-cache")
     compile("org.springframework.boot:spring-boot-starter-data-redis")
     compile("org.springframework.cloud:spring-cloud-starter-openfeign")
@@ -176,7 +177,7 @@ dependencies {
             "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     )
 
-    runtime 'org.postgresql:postgresql:42.2.1'
+    runtime 'mysql:mysql-connector-java:5.1.39'
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("com.github.sbrannen:spring-test-junit5:1.3.1")

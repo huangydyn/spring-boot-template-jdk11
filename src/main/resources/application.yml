@@ -17,12 +17,10 @@ spring:
       fail-on-unknown-properties: false
   datasource:
     name: test_db
-    driver-class-name: org.postgresql.Driver
-    hikari:
-      connection-timeout: 30000
-      maximum-pool-size: 200
-      max-lifetime: 1800000
-      minimum-idle: 5
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initial-size: 1
+      max-active: 2
   flyway:
     enabled: true
     out-of-order: true
