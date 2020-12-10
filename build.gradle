@@ -142,6 +142,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-redis")
     compile("org.springframework.cloud:spring-cloud-starter-openfeign")
     compile("org.springframework.cloud:spring-cloud-starter-sleuth")
+    compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
     compile("io.github.openfeign:feign-okhttp:10.2.0")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-aop")
@@ -171,7 +172,7 @@ dependencies {
             "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     )
 
-    runtime 'org.postgresql:postgresql:42.2.1'
+    runtime 'mysql:mysql-connector-java:5.1.39'
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("com.github.sbrannen:spring-test-junit5:1.3.1")
