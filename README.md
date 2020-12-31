@@ -1,4 +1,5 @@
-# Spring Boot Template
+# Spring Boot Template(基于Jdk11的SpringBoot模板工程)
+
 This is a template project for Spring Boot based on jdk11, with basic components:
 
 - Spring Boot:2.1.13.RELEASE
