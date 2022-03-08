@@ -1,46 +1,17 @@
 spring:
   profiles:
     active: local
-  jpa:
-    hibernate:
-      use-new-id-generator-mappings: false
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    properties:
-      hibernate:
-        temp:
-          use_jdbc_metadata_defaults: false
   jackson:
     date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
     serialization:
       write_dates_as_timestamps: false
     deserialization:
       fail-on-unknown-properties: false
-  datasource:
-    name: test_db
-    driver-class-name: com.mysql.jdbc.Driver
-    hikari:
-      connection-timeout: 30000
-      maximum-pool-size: 200
-      max-lifetime: 1800000
-      minimum-idle: 5
-  flyway:
-    enabled: false
-    out-of-order: true
   servlet:
     multipart:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
-  redis:
-    database: 0
-    lettuce:
-      pool:
-        min-idle: 1
-        max-idle: 8
-        max-active: 30
-  cache:
-    type: simple
-    expiration: 3600
 
 logging:
   level:
