@@ -122,7 +122,7 @@
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
         <module name="LineLength">
-            <property name="max" value="120"/>
+            <property name="max" value="200"/>
         </module>
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
@@ -138,7 +138,6 @@
         <module name="GenericWhitespace"/>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceAfter"/>
-        <module name="NoWhitespaceBefore"/>
         <module name="OperatorWrap"/>
         <module name="ParenPad"/>
         <module name="TypecastParenPad"/>

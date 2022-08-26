@@ -1,4 +1,7 @@
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   profiles:
     active: local
   jackson:
@@ -12,6 +15,8 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
 
 logging:
   level:
@@ -34,3 +39,5 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
 
+server:
+  shutdown: graceful

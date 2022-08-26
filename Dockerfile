@@ -1,8 +1,8 @@
 # base image
 FROM openjdk:11
 # add package to image
-ADD build/libs/*.jar /app/app.jar
+ADD build/libs/spring-boot-template-jdk11-1.0.jar /app/
 # work directory
 WORKDIR /app
 # entrypoint
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "spring-boot-template-jdk11-1.0.jar"]
